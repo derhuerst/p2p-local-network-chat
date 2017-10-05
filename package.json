@@ -1,0 +1,35 @@
+{
+	"name": "p2p-mdns-chat",
+	"description": "A really basic distributed chat with mDNS discovery.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"p2p",
+		"peer to peer",
+		"distrubted",
+		"chat",
+		"mdns",
+		"multicast dns"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/p2p-mdns-chat",
+	"repository": "derhuerst/p2p-mdns-chat",
+	"bugs": "https://github.com/derhuerst/p2p-mdns-chat/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"tape": "^4.8.0",
+		"tap-min": "^1.2.2"
+	},
+	"scripts": {
+		"test": "node test.js | tap-min",
+		"prepublishOnly": "npm test"
+	}
+}
