@@ -1,7 +1,6 @@
 'use strict'
 
-const createServer = require('./lib/create-server')
-const announceSelf = require('./lib/announce-self')
+const createModel = require('./lib/create-model')
 const findPeers = require('./lib/find-peers')
 const id = require('./lib/id')
 
@@ -10,18 +9,14 @@ const showError = (err) => {
 	process.exit(1)
 }
 
-createServer((err, server, address, port) => {
-	if (err) return showError(err)
-	console.error(id, address, port)
+const model = createModel()
 
-	announceSelf(id, address, port, (err) => {
-		if (err) return showError(err)
-		console.error('announced')
+const replicate = (connection) => {
+	const s = model.createStream()
+	s.pipe(connection).pipe(s)
+}
 
-		const peers = findPeers()
-		peers.on('peer', (peer, connection) => {
-			const s = createReplicationStream()
-			s.pipe(connection).pipe(s)
-		})
-	})
+findPeers((peer) => {
+	console.error('peer', peer.id)
+	replicate(peer)
 })
