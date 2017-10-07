@@ -11,14 +11,17 @@
 ## Installing
 
 ```shell
-npm install p2p-mdns-chat
+npm install -g p2p-mdns-chat
 ```
 
 
 ## Usage
 
-```js
-todo
+```
+Usage:
+    p2p-mdns-chat [name]
+Examples:
+    p2p-mdns-chat derhuerst
 ```
 
 

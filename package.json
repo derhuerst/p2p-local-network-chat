@@ -3,7 +3,11 @@
 	"description": "A really basic distributed chat with mDNS discovery.",
 	"version": "0.1.0",
 	"main": "index.js",
+	"bin": {
+		"p2p-mdns-chat": "./bin.js"
+	},
 	"files": [
+		"bin.js",
 		"index.js",
 		"lib"
 	],
@@ -26,6 +30,7 @@
 	"dependencies": {
 		"airswarm": "^1.1.0",
 		"crypto-random-string": "^1.0.0",
+		"mri": "^1.1.0",
 		"r-array": "^0.5.3",
 		"really-basic-chat-ui": "^0.2.0",
 		"sha1-hex": "^1.0.0"
