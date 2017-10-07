@@ -33,6 +33,7 @@
 	"dependencies": {
 		"airswarm": "^1.1.0",
 		"crypto-random-string": "^1.0.0",
+		"lodash.debounce": "^4.0.8",
 		"mri": "^1.1.0",
 		"r-array": "^0.5.3",
 		"really-basic-chat-ui": "^0.2.0",
