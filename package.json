@@ -1,10 +1,10 @@
 {
-	"name": "p2p-mdns-chat",
-	"description": "A really basic distributed chat with mDNS discovery.",
+	"name": "p2p-local-network-chat",
+	"description": "A minimal peer-to-peer chat for the local network.",
 	"version": "0.1.0",
 	"main": "index.js",
 	"bin": {
-		"p2p-mdns-chat": "./bin.js"
+		"p2p-local-network-chat": "./bin.js"
 	},
 	"files": [
 		"bin.js",
@@ -17,12 +17,15 @@
 		"distrubted",
 		"chat",
 		"mdns",
-		"multicast dns"
+		"multicast dns",
+		"wifi",
+		"lan",
+		"local network"
 	],
 	"author": "Jannis R <mail@jannisr.de>",
-	"homepage": "https://github.com/derhuerst/p2p-mdns-chat",
-	"repository": "derhuerst/p2p-mdns-chat",
-	"bugs": "https://github.com/derhuerst/p2p-mdns-chat/issues",
+	"homepage": "https://github.com/derhuerst/p2p-local-network-chat",
+	"repository": "derhuerst/p2p-local-network-chat",
+	"bugs": "https://github.com/derhuerst/p2p-local-network-chat/issues",
 	"license": "ISC",
 	"engines": {
 		"node": ">=6"
