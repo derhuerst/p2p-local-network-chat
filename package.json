@@ -49,6 +49,6 @@
 		]
 	},
 	"scripts": {
-		"build": "pkg -c package.json --public bin.js -out-path dist"
+		"build": "pkg -c package.json --public bin.js --out-path dist"
 	}
 }
