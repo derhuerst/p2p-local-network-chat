@@ -27,6 +27,7 @@
 		"airswarm": "^1.1.0",
 		"crypto-random-string": "^1.0.0",
 		"r-array": "^0.5.3",
+		"really-basic-chat-ui": "^0.2.0",
 		"sha1-hex": "^1.0.0"
 	},
 	"devDependencies": {
