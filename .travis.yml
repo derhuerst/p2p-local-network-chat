@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - 'stable'
 script:
-  - travis_wait 40 npm run build
+  - npm run build
 after_script:
   - ls -lh dist/*
 deploy:
