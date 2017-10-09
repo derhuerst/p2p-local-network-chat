@@ -40,11 +40,15 @@
 		"sha1-hex": "^1.0.0"
 	},
 	"devDependencies": {
-		"tap-min": "^1.2.2",
-		"tape": "^4.8.0"
+		"pkg": "^4.1.4"
+	},
+	"pkg": {
+		"targets": [
+			"latest-macos-x64",
+			"latest-linux-x64"
+		]
 	},
 	"scripts": {
-		"test": "node test.js | tap-min",
-		"prepublishOnly": "npm test"
+		"build": "pkg -c package.json --public bin.js --out-path dist"
 	}
 }
