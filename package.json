@@ -1,8 +1,9 @@
 {
 	"name": "p2p-local-network-chat",
 	"description": "A minimal peer-to-peer chat for the local network.",
-	"version": "0.1.1",
+	"version": "1.0.0",
 	"main": "index.js",
+	"preferGlobal": true,
 	"bin": {
 		"p2p-local-network-chat": "./bin.js"
 	},

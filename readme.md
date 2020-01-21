@@ -27,6 +27,10 @@ Examples:
     p2p-local-network-chat derhuerst
 ```
 
+## Related
+
+- [hyperswarm-universal-chat](https://github.com/RangerMauve/hyperswarm-universal-chat) – A basic demo showing how you can make a gossip based p2p chat using hyperswarm.
+
 
 ## Contributing
 
