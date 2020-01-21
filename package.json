@@ -28,11 +28,11 @@
 	"bugs": "https://github.com/derhuerst/p2p-local-network-chat/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=10"
 	},
 	"dependencies": {
 		"airswarm": "^1.1.0",
-		"crypto-random-string": "^1.0.0",
+		"crypto-random-string": "^3.1.0",
 		"lodash.debounce": "^4.0.8",
 		"mri": "^1.1.0",
 		"r-array": "^0.5.3",

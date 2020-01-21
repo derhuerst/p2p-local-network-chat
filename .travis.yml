@@ -2,6 +2,8 @@ sudo: false
 language: node_js
 node_js:
   - 'stable'
+  - 'lts/*'
+  - '10'
 script:
   - npm run build
 after_script:
@@ -13,6 +15,7 @@ deploy:
   api_key: $GITHUB_TOKEN
   on:
     branch: master
+    node: stable
   file: dist/*
   file_glob: true
 
